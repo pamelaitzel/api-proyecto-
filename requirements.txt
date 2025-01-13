@@ -3,3 +3,5 @@ gunicorn
 matplotlib
 pandas
 numpy
+sklearn
+os
