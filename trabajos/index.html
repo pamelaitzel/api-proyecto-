@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Local</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: purple;
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: pink;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+
+        /* Contenedor de botones */
+        form {
+            display: flex;
+            flex-direction: column; /* Apilamos los botones verticalmente */
+            gap: 15px; /* Espaciado entre los botones */
+            width: 100%;
+            max-width: 400px; /* Ancho máximo del contenedor */
+        }
+
+        /* Estilo de los botones */
+        button {
+            background: #2980b9;
+            color: black;
+            border: none;
+            border-radius: 12px;
+            padding: 15px 25px; /* Tamaño más grande */
+            font-size: 1.2em; /* Texto más grande */
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.4);
+        }
+
+        button:hover {
+            background-color: #1e6091;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(1);
+            background-color: #154773;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            button {
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Proyecto Final</h1>
+    <p>Notebooks </p>
+
+    <form action="/execute" method="post">
+        <button type="submit" name="notebook" value="Division_del_DataSet.py">Division_del_DataSet</button>
+        <button type="submit" name="notebook" value="Evalucion_de_resultados.py">Evalucion_de_resultados</button>
+        <button type="submit" name="notebook" value="support_vector_machine.py">support_vector_machine</button>
+        <button type="submit" name="notebook" value="transformadores_y_pipelines.py">transformadores_y_pipelines</button>
+        <button type="submit" name="notebook" value="preparacion_del_DataSet.py">preparacion_del_DataSet</button>
+        <button type="submit" name="notebook" value="Visualizacion-de-Datos.py">Visualizacion-de-Datos</button>
+        <button type="submit" name="notebook" value="decision_trees_android_malware_detection.py">decision_trees_android_malware_detection</button>
+    </form>
+</body>
+</html>
